@@ -48,7 +48,7 @@ def home():
             for av in errData0:
                 errData.append(av)
         if len(errData)>0:
-            return(str(errData))
+            return(str(errData).replace("[","").replace("]",""))
         else:
             return("Every this is fine")
 
