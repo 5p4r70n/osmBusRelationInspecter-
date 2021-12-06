@@ -45,7 +45,8 @@ def home():
         for g in relationIds.split(","):
             errData0=relation(g)
             print(errData0)
-            errData.append(errData0)
+            for av in errData0:
+            errData.append(av)
         if len(errData)>0:
             return(str(errData))
         else:
