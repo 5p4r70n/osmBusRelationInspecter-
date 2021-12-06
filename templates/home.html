@@ -1,0 +1,13 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="container-fluid" style="position: relative;" >
+    <div class="row">
+        <div class="col-m-12" style="margin: auto;">
+            <form action="/" method="POST">
+                <input type="text" id="relation_id" name="relation_id" placeholder="enter relation ids seperated by comma">
+                <input type="submit" value="Check">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock%}
